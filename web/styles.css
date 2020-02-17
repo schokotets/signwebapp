@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  background: black;
+  min-height: 100vh;
+}
+
+#aspect-ratio {
+  width: 100vw;
+  height: 56.25vw; /* 100/56.25 = 1.778 */
+  max-height: 100vh;
+  max-width: 177.78vh; /* 16/9 = 1.778 */
+  margin: auto;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+#container {
+  width: 100%;
+  position: relative;
+}
+
+canvas {
+  outline: 1px solid black;
+  touch-action: none;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+button {
+  position: absolute;
+  margin: 5px;
+}
+
+button#btn-fullscreen {
+  top: 50px;
+  left: 5px;
+}
+button#btn-upload {
+  bottom: 5px;
+  right: 5px;
+}
+
